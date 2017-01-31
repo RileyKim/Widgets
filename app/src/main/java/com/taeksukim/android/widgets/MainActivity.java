@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //1. 위젝을 정의한다.
     Button btn;
     Button cal;
+    Button Widget;
+    Button unit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cal = (Button) findViewById(R.id.cal);
         cal.setOnClickListener(this);
 
+        Widget = (Button) findViewById(R.id.btnWidget);
+        Widget.setOnClickListener(this);
+
+        unit = (Button) findViewById(R.id.btnUnit);
+        unit.setOnClickListener(this);
     }
 
     public void onClick(View view) {
@@ -41,6 +48,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.cal:
                 intent = new Intent(this, CalculatorActivity.class);
+
+                startActivity(intent);
+                break;
+
+            case R.id.btnWidget:
+                intent = new Intent(this, WidgetActivity.class);
+
+                startActivity(intent);
+                break;
+
+            case R.id.btnUnit:
+                intent = new Intent(this, UnitActivity.class);
 
                 startActivity(intent);
                 break;

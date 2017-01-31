@@ -28,11 +28,10 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
     Button run1;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Calculator);
+        setContentView(R.layout.activity_calculator);
 
         result = (TextView) findViewById(R.id.result);
         btn0 = (Button) findViewById(R.id.btn0);

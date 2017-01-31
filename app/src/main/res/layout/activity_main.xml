@@ -24,4 +24,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/cal" />
+
+    <Button
+        android:text="Widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnWidget" />
+
+    <Button
+        android:text="UNIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUnit" />
 </LinearLayout>
